@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "montserrat";
+  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
 }
 /* html, body{
@@ -32,7 +32,7 @@
 #cursor {
   height: 20px;
   width: 20px;
-  background-color: #ffffff;
+  background-color: #95c11e;
   border-radius: 50%;
   position: fixed;
   z-index: 99;
@@ -102,6 +102,8 @@ video {
   min-height: 100vh;
   width: 100%;
   z-index: 10;
+  overflow-x: hidden;
+  flex: wrap;
 }
 
 @keyframes scroll {
@@ -197,9 +199,9 @@ video {
   padding: 30px;
   text-align: center;
   border-radius: 30px;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
-} 
+}
 
 .overlayer h4 {
   font-size: 50px;
@@ -214,61 +216,164 @@ video {
   font-size: 35px;
 }
 
-#cards-container:hover .overlayer:hover{
-    opacity: 1;
+#cards-container:hover .overlayer:hover {
+  opacity: 1;
 }
 
-.card:hover{
-    transform: rotate3d(-1,1,0,20deg);
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 20deg);
 }
 
-#green-div{
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(https://t4.ftcdn.net/jpg/06/16/18/33/360_F_616183329_2FUSLoo0iewBScmcBwaHfF9qkjh8iq9u.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background: linear-gradient(to left, rgb(26, 255, 0), #95c11e);
+#green-div {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://t4.ftcdn.net/jpg/06/16/18/33/360_F_616183329_2FUSLoo0iewBScmcBwaHfF9qkjh8iq9u.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(to left, rgb(26, 255, 0), #95c11e);
 }
 
-
-#green-div h4{
-    width: 40%;
-    line-height: 60px;
-    text-align: center;
-    font-size: 45px;
-    text-transform: uppercase;
+#green-div h4 {
+  width: 40%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
 }
 
-#page3{
-  height: 100vh;
+#page3 {
+  height: 80vh;
   width: 100%;
   background-color: black;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   position: relative;
 }
-#page3 p{
+#page3 p {
   font-size: 35px;
   font-weight: 800;
   width: 60%;
   line-height: 45px;
   text-align: center;
 }
-#page3 img{
+#page3 img {
   position: absolute;
 }
-#colon1{
+#colon1 {
   left: 15%;
   top: 30%;
 }
-#colon2{
+#colon2 {
   transform: rotate(180deg);
   right: 15%;
   bottom: 30%;
 }
+#page4 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#page4-1 {
+  top: 4%;
+  position: absolute;
+  font-size: 100px;
+  /* background-color: #96c11e25; */
+  box-shadow: 3px chartreuse;
+  padding: 5px;
+}
+#page4-1 h1{
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+
+
+#page4-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.elem {
+  width: 26%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+}
+.elem h2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #65b41f;
+  font-size: 55px;
+  text-transform: uppercase;
+  position: absolute;
+  color: black;
+  font-weight: 750;
+}
+.elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+.elem:hover h2 {
+  color: white;
+  background-color: transparent;
+}
+
+#footer{
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, #119f3a, #ace022);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#footer-d-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+#logo{
+  width: 200px;
+  height: 200px;
+}
+#imgdiv img{
+  width: 50px;
+  margin: 5px;
+}
+#footer-d-2 h2, #footer-d-3 h2{
+font-size: 50px;
+  gap: 50px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 800;
+  line-height: 80px;
+}
+
+#address h2{
+ font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+  line-height: 40px;
+}
+#direction{
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 800;
+  line-height: 40px;
+}
+
