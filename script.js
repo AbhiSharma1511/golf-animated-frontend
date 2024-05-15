@@ -29,7 +29,7 @@ document.addEventListener("mousemove",(debt)=>{
 
 gsap.to("#nav",{
     backgroundColor:"#000",
-    height:"130px",
+    height:"11vh",
     scrollTrigger:{
         trigger:"#nav",
         scroller:"body",
